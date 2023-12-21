@@ -1,13 +1,3 @@
-provider "aws" {
-  region = var.aws_region
-  default_tags {
-      tags = {
-          Owner = "steven.rigby@xdesign.com and feng.zhu@xdesign.com"
-      }
-  }
-  profile = "xd-sso-internal-tools-admin"
-}
-
 //S3 BUCKET
 
 resource "random_pet" "lambda_bucket_name" {
